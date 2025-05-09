@@ -30,11 +30,11 @@ The core mission is to design, build, and test a robust ML system for extracting
 
 ```mermaid
 graph TD
-    A[📄 Invoice Image Input] --> B{Image Preprocessing (Optional)};
-    B --> C[🚀 YOLOv12 Model];
-    C --> D{Bounding Box Coords & Labels};
-    D --> E[✂️ Crop Regions];
-    E --> F[👁️ Tesseract OCR];
-    F --> G{Extracted Text};
-    G --> H[⚙️ Post-processing & Structuring];
-    H --> I[💾 JSON Output];
+    A[📄 Invoice Image Input] --> B{Image Preprocessing (Optional)}
+    B --> C[🚀 YOLOv12 Model]
+    C --> D{Bounding Box Coords & Labels}
+    D --> E[✂️ Crop Regions]
+    E --> F[👁️ Tesseract OCR]
+    F --> G{Extracted Text}
+    G --> H[⚙️ Post-processing & Structuring]
+    H --> I[💾 JSON Output]
