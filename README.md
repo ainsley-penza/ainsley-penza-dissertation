@@ -23,3 +23,18 @@ The core mission is to design, build, and test a robust ML system for extracting
 * **Text Extraction:** Employ **Tesseract OCR** to "read" the text within the detected regions.
 * **Structured Output:** Convert the extracted data into a developer-friendly **JSON format**.
 * **Performance Evaluation:** Rigorously assess the system's accuracy and efficiency.
+
+---
+
+## ⚙️ System Architecture Diagram
+
+```mermaid
+graph TD
+    A[📄 Invoice Image Input] --> B{Image Preprocessing (Optional)};
+    B --> C[🚀 YOLOv12 Model];
+    C --> D{Bounding Box Coords & Labels};
+    D --> E[✂️ Crop Regions];
+    E --> F[👁️ Tesseract OCR];
+    F --> G{Extracted Text};
+    G --> H[⚙️ Post-processing & Structuring];
+    H --> I[💾 JSON Output];
